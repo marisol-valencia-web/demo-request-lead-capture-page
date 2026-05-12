@@ -1,1 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Request a personalized FlowDesk AI demo and discover how your team can automate workflows, centralize tasks, and reduce manual follow-up." />
+  <title>FlowDesk AI — Request a Demo</title>
 
+  <!-- Google Fonts: Sora (headings) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
+
+     <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+
+  <!-- ============================================================
+       HEADER / NAVIGATION
+  ============================================================ -->
+  <header class="header" role="banner">
+    <div class="container">
+      <div class="header__inner">
+
+        <!-- Logo -->
+        <a href="#" class="header__logo" aria-label="FlowDesk AI home">
+          <div class="header__logo-mark" aria-hidden="true">FD</div>
+MVC        </a>
+
+        <!-- Primary navigation -->
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+          <a href="#features" class="nav__link">Product</a>
+          <a href="#use-cases" class="nav__link">Use Cases</a>
+          <a href="#demo-form" class="nav__link">Demo</a>
+          <a href="#faq" class="nav__link">FAQ</a>
+        </nav>
+
+        <!-- Header CTA -->
+        <div class="header__actions">
+          <!-- Mobile toggle (visual only for portfolio) -->
+          <button class="nav__toggle" aria-label="Open navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <a href="#demo-form" class="btn btn--primary">Request demo</a>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section class="hero" aria-labelledby="hero-headline">
+    <div class="hero__inner">
+
+      <!-- Badge -->
+      <div class="hero__badge">
+        <span class="hero__badge-dot" aria-hidden="true"></span>
+        Workflow automation for technical teams
+      </div>
+
+      <!-- Headline -->
+      <h1 class="hero__headline" id="hero-headline">
+        See how FlowDesk AI can <em>simplify your team operations</em>
+      </h1>
+
+      <!-- Subheadline -->
+      <p class="hero__subheadline">
+        Request a personalized demo and discover how your team can automate workflows, centralize tasks, and reduce manual follow-up.
+      </p>
+
+      <!-- CTA buttons -->
+      <div class="hero__cta-group">
+        <a href="#demo-form" class="btn btn--primary btn--lg">Request a demo</a>
+        <a href="#features" class="btn btn--ghost btn--lg">View features</a>
+      </div>
+
+      <!-- Trust line -->
+      <p class="hero__trust">
+        <span>Free demo</span>
+        <span class="hero__trust-dot" aria-hidden="true">●</span>
+        <span>No credit card required</span>
+        <span class="hero__trust-dot" aria-hidden="true">●</span>
+        <span>Personalized walkthrough</span>
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       LEAD CAPTURE FORM SECTION
+  ============================================================ -->
+  <section class="form-section" id="demo-form" aria-labelledby="form-section-title">
+    <div class="container">
+      <div class="form-section__inner">
+
+        <!-- Left: value props -->
+        <div class="form-section__content">
+
+          <span class="section__label">Request a demo</span>
+          <h2 class="section__title" id="form-section-title">Request your personalized demo</h2>
+          <p class="section__subtitle">
+            Tell us about your team and we'll prepare a walkthrough built around your goals — not a generic sales pitch.
+          </p>
+
+          <!-- Value props list -->
+          <ul class="form-value-list" aria-label="Demo benefits">
+            <li class="form-value-item">
+              <div class="form-value-item__icon" aria-hidden="true">✓</div>
+              <div class="form-value-item__text">
+                <strong>Tailored to your workflow</strong>
+                <span>Our team reviews your goals before the session.</span>
+              </div>
+            </li>
+            <li class="form-value-item">
+              <div class="form-value-item__icon" aria-hidden="true">⚡</div>
+              <div class="form-value-item__text">
+                <strong>Fast response time</strong>
+                <span>We confirm within 1 business day.</span>
+              </div>
+            </li>
+            <li class="form-value-item">
+              <div class="form-value-item__icon" aria-hidden="true">🔒</div>
+              <div class="form-value-item__text">
+                <strong>No commitment required</strong>
+                <span>Free demo. No credit card. No pressure.</span>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+
+        <!-- Right: form card -->
+        <div class="form-card" role="region" aria-label="Demo request form">
+          <h3 class="form-card__title">Book your demo session</h3>
+
+          <!--
+            NOTE: Static form for portfolio purposes.
+            In production, this would submit to a backend endpoint or form service.
+          -->
+          <form class="form" novalidate aria-label="Demo request form fields">
+
+            <!-- Row: Full name + Work email -->
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="full-name">
+                  Full name <span aria-hidden="true">*</span>
+                </label>
+                <input
+                  class="form__input"
+                  type="text"
+                  id="full-name"
+                  name="full_name"
+                  placeholder="Jane Smith"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="work-email">
+                  Work email <span aria-hidden="true">*</span>
+                </label>
+                <input
+                  class="form__input"
+                  type="email"
+                  id="work-email"
+                  name="email"
+                  placeholder="jane@company.com"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Row: Company name + Job title -->
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="company-name">
+                  Company name <span aria-hidden="true">*</span>
+                </label>
+                <input
+                  class="form__input"
+                  type="text"
+                  id="company-name"
+                  name="company"
+                  placeholder="Acme Inc."
+                  autocomplete="organization"
+                  required
+                />
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="job-title">
+                  Job title
+                </label>
+                <input
+                  class="form__input"
+                  type="text"
+                  id="job-title"
+                  name="job_title"
+                  placeholder="Operations Manager"
+                  autocomplete="organization-title"
+                />
+              </div>
+            </div>
+
+            <!-- Team size -->
+            <div class="form__group">
+              <label class="form__label" for="team-size">
+                Team size <span aria-hidden="true">*</span>
+              </label>
+              <div class="form__select-wrapper">
+                <select class="form__select" id="team-size" name="team_size" required>
+                  <option value="" disabled selected>Select your team size</option>
+                  <option value="1-10">1 – 10 people</option>
+                  <option value="11-50">11 – 50 people</option>
+                  <option value="51-200">51 – 200 people</option>
+                  <option value="201-plus">200+ people</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Main goal -->
+            <div class="form__group">
+              <label class="form__label" for="main-goal">
+                Main goal — what do you want to improve?
+              </label>
+              <textarea
+                class="form__textarea"
+                id="main-goal"
+                name="main_goal"
+                placeholder="e.g. Reduce manual task tracking, automate recurring workflows, improve visibility across projects..."
+                rows="4"
+              ></textarea>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit" class="form__submit">
+              Request my demo →
+            </button>
+
+            <!-- Privacy note -->
+            <p class="form__privacy">
+              We'll contact you within 1 business day. No spam, ever.
+            </p>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PROCESS STEPS — "What happens after you request a demo?"
+  ============================================================ -->
+  <section class="steps-section section" aria-labelledby="steps-title">
+    <div class="container">
+
+      <div class="section__header section__header--center">
+        <span class="section__label">The process</span>
+        <h2 class="section__title" id="steps-title">What happens after you request a demo?</h2>
+      </div>
+
+      <ol class="steps-grid" aria-label="Demo process steps">
+
+        <li class="step-card">
+          <div class="step-card__number" aria-hidden="true">1</div>
+          <h3 class="step-card__title">Submit your request</h3>
+          <p class="step-card__text">
+            Tell us a little about your team and current workflow. The more context you share, the better we can prepare.
+          </p>
+        </li>
+
+        <li class="step-card">
+          <div class="step-card__number" aria-hidden="true">2</div>
+          <h3 class="step-card__title">We review your needs</h3>
+          <p class="step-card__text">
+            Our team prepares a personalized walkthrough based on your goals — not a generic product tour.
+          </p>
+        </li>
+
+        <li class="step-card">
+          <div class="step-card__number" aria-hidden="true">3</div>
+          <h3 class="step-card__title">Join a guided demo</h3>
+          <p class="step-card__text">
+            See exactly how FlowDesk AI can support your daily operations, with time to ask questions.
+          </p>
+        </li>
+
+      </ol>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       BENEFITS SECTION
+  ============================================================ -->
+  <section class="section section--accent" aria-labelledby="benefits-title">
+    <div class="container">
+
+      <div class="section__header">
+        <span class="section__label">Benefits</span>
+        <h2 class="section__title" id="benefits-title">Why teams request a demo</h2>
+        <p class="section__subtitle">
+          See how FlowDesk AI tackles the operational challenges that slow technical teams down.
+        </p>
+      </div>
+
+      <ul class="benefits-grid" aria-label="Platform benefits">
+
+        <li class="benefit-card">
+          <div class="benefit-card__icon" aria-hidden="true">⚙️</div>
+          <div>
+            <h3 class="benefit-card__title">Automate repetitive workflows</h3>
+            <p class="benefit-card__text">
+              Set up trigger-based automations that handle recurring tasks without manual intervention — freeing your team to focus on high-value work.
+            </p>
+          </div>
+        </li>
+
+        <li class="benefit-card">
+          <div class="benefit-card__icon" aria-hidden="true">🗂️</div>
+          <div>
+            <h3 class="benefit-card__title">Centralize team operations</h3>
+            <p class="benefit-card__text">
+              Bring tasks, projects, and team communication into a single operational hub — no more scattered tools and disconnected processes.
+            </p>
+          </div>
+        </li>
+
+        <li class="benefit-card">
+          <div class="benefit-card__icon" aria-hidden="true">📊</div>
+          <div>
+            <h3 class="benefit-card__title">Improve visibility across projects</h3>
+            <p class="benefit-card__text">
+              Get a real-time view of every active project, workflow status, and team workload — so nothing falls through the cracks.
+            </p>
+          </div>
+        </li>
+
+        <li class="benefit-card">
+          <div class="benefit-card__icon" aria-hidden="true">🔁</div>
+          <div>
+            <h3 class="benefit-card__title">Reduce manual follow-up</h3>
+            <p class="benefit-card__text">
+              Replace status-check meetings and follow-up messages with automated notifications and progress tracking built into the platform.
+            </p>
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       USE CASES SECTION
+  ============================================================ -->
+  <section class="section section--white" id="use-cases" aria-labelledby="use-cases-title">
+    <div class="container">
+
+      <div class="section__header section__header--center">
+        <span class="section__label">Use cases</span>
+        <h2 class="section__title" id="use-cases-title">Built for technical teams that need clarity and speed</h2>
+        <p class="section__subtitle">
+          FlowDesk AI adapts to different team structures and operational contexts.
+        </p>
+      </div>
+
+      <ul class="use-cases-grid" aria-label="Team use cases">
+
+        <li class="use-case-card">
+          <span class="use-case-card__tag">SaaS</span>
+          <h3 class="use-case-card__title">SaaS teams</h3>
+          <p class="use-case-card__text">
+            Manage feature rollouts, coordinate cross-functional workflows, and reduce release friction with automated task routing between engineering and product.
+          </p>
+        </li>
+
+        <li class="use-case-card">
+          <span class="use-case-card__tag">Operations</span>
+          <h3 class="use-case-card__title">Operations teams</h3>
+          <p class="use-case-card__text">
+            Centralize operational processes, automate recurring SOPs, and maintain full visibility over daily activities without manual status updates.
+          </p>
+        </li>
+
+        <li class="use-case-card">
+          <span class="use-case-card__tag">Customer Success</span>
+          <h3 class="use-case-card__title">Customer success teams</h3>
+          <p class="use-case-card__text">
+            Automate onboarding workflows, track client milestones, and ensure no account falls behind with proactive task triggers and alerts.
+          </p>
+        </li>
+
+        <li class="use-case-card">
+          <span class="use-case-card__tag">Tech Support</span>
+          <h3 class="use-case-card__title">Technical support teams</h3>
+          <p class="use-case-card__text">
+            Route incoming issues automatically, prioritize tickets by urgency, and keep response workflows moving without manual triage overhead.
+          </p>
+        </li>
+
+      </ul>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       TRUST / SOCIAL PROOF SECTION
+  ============================================================ -->
+  <section class="trust-section section" aria-labelledby="trust-title">
+    <div class="container">
+
+      <div class="section__header section__header--center">
+        <span class="section__label">Results</span>
+        <h2 class="section__title" id="trust-title">Trusted by growing technical teams</h2>
+      </div>
+
+      <!-- Metric cards -->
+      <div class="trust-metrics" role="list" aria-label="Platform metrics">
+
+        <div class="trust-metric" role="listitem">
+          <span class="trust-metric__value" aria-label="40 percent">40%</span>
+          <span class="trust-metric__label">less manual follow-up</span>
+        </div>
+
+        <div class="trust-metric" role="listitem">
+          <span class="trust-metric__value" aria-label="3 times">3×</span>
+          <span class="trust-metric__label">faster workflow setup</span>
+        </div>
+
+        <div class="trust-metric" role="listitem">
+          <span class="trust-metric__value" aria-label="24/7">24/7</span>
+          <span class="trust-metric__label">workflow visibility</span>
+        </div>
+
+      </div>
+
+      <!-- Testimonial -->
+      <blockquote class="testimonial" cite="FlowDesk AI customer testimonial">
+        <div class="testimonial__quote-mark" aria-hidden="true">"</div>
+        <div>
+          <p class="testimonial__text">
+            FlowDesk AI helped our team reduce scattered tasks and create a clearer operational workflow. We went from constant follow-up messages to a system that keeps itself moving.
+          </p>
+          <footer class="testimonial__author">
+            <div class="testimonial__avatar" aria-hidden="true">AL</div>
+            <div>
+              <div class="testimonial__name">Amanda Lee</div>
+              <div class="testimonial__role">Operations Manager, Meridian Labs</div>
+            </div>
+          </footer>
+        </div>
+      </blockquote>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FEATURE PREVIEW SECTION
+  ============================================================ -->
+  <section class="section section--white" id="features" aria-labelledby="features-title">
+    <div class="container">
+
+      <div class="section__header section__header--center">
+        <span class="section__label">Features</span>
+        <h2 class="section__title" id="features-title">What you'll see in the demo</h2>
+        <p class="section__subtitle">
+          The demo session covers the core tools your team will use every day.
+        </p>
+      </div>
+
+      <ul class="features-grid" aria-label="Features included in the demo">
+
+        <li class="feature-block">
+          <div class="feature-block__icon" aria-hidden="true">🔧</div>
+          <h3 class="feature-block__title">Workflow builder</h3>
+          <p class="feature-block__text">
+            A visual, drag-and-drop editor for building custom automation sequences. Connect triggers, conditions, and actions without writing a single line of code.
+          </p>
+        </li>
+
+        <li class="feature-block">
+          <div class="feature-block__icon" aria-hidden="true">📋</div>
+          <h3 class="feature-block__title">Team dashboard</h3>
+          <p class="feature-block__text">
+            A real-time operational overview for managers and team leads. Track active workflows, task status, and individual workload from a single centralized view.
+          </p>
+        </li>
+
+        <li class="feature-block">
+          <div class="feature-block__icon" aria-hidden="true">🔌</div>
+          <h3 class="feature-block__title">CRM and project tool integrations</h3>
+          <p class="feature-block__text">
+            Native integrations with the tools your team already uses — including CRMs, project trackers, and communication platforms — so workflows stay connected.
+          </p>
+        </li>
+
+      </ul>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FAQ SECTION — CSS-only accordion via <details>/<summary>
+  ============================================================ -->
+  <section class="section section--accent" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+
+      <div class="section__header section__header--center">
+        <span class="section__label">FAQ</span>
+        <h2 class="section__title" id="faq-title">Frequently asked questions</h2>
+      </div>
+
+      <dl class="faq-list">
+
+        <details class="faq-item">
+          <summary>Is the demo free?</summary>
+          <div class="faq-item__body">
+            Yes, the demo is completely free and carries no obligation. We won't ask for a credit card or payment information at any point during or after the session.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>How long does the demo take?</summary>
+          <div class="faq-item__body">
+            Most sessions run between 30 and 45 minutes, depending on the size and complexity of your team's workflows. We leave time at the end for your questions.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Do I need technical knowledge to follow the demo?</summary>
+          <div class="faq-item__body">
+            Not at all. FlowDesk AI is designed for operations managers, team leads, and non-technical users as much as it is for developers. The demo is structured to be accessible to everyone on your team.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Can I invite my team to the demo?</summary>
+          <div class="faq-item__body">
+            Absolutely. We encourage it. Having key stakeholders present — from operations leads to technical team members — means everyone gets aligned from the start. Just let us know how many people to expect.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>What happens after the demo?</summary>
+          <div class="faq-item__body">
+            After the session, we'll share a summary along with any resources relevant to your use case. There's no pressure to commit — you'll have everything you need to evaluate FlowDesk AI on your own terms.
+          </div>
+        </details>
+
+      </dl>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FINAL CTA SECTION
+  ============================================================ -->
+  <section class="cta-section" aria-labelledby="cta-headline">
+    <div class="cta-section__inner">
+
+      <h2 class="cta-section__headline" id="cta-headline">
+        Ready to see FlowDesk AI in action?
+      </h2>
+
+      <p class="cta-section__text">
+        Request a personalized walkthrough and learn how your team can simplify daily operations — starting this week.
+      </p>
+
+      <div class="cta-section__buttons">
+        <a href="#demo-form" class="btn btn--white btn--lg">Request a demo</a>
+        <a href="#features" class="btn btn--white-ghost btn--lg">View pricing</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FORM SUBMISSION FEEDBACK — injected by JS
+       (hidden by default; shown on success or error)
+  ============================================================ -->
+  <div id="form-feedback" role="alert" aria-live="polite" style="display:none;"></div>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+
+        <!-- Brand -->
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <div class="footer__logo-mark" aria-hidden="true">FD</div>
+            Marisol Valencia Cardona
+          </div>
+          <p class="footer__tagline">
+            Demo request page built as a portfolio project.
+          </p>
+        </div>
+
+        <!-- Footer links -->
+        <nav aria-label="Footer navigation">
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Privacy</a></li>
+            <li><a href="#" class="footer__link">Terms</a></li>
+            <li><a href="#" class="footer__link">Contact</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+  </footer>
+
+ <script src="script.js"></script>
+</body>
+</html>
